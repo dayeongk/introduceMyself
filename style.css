@@ -1,0 +1,112 @@
+nav {
+    background-color: grey;
+    margin : 20px 0 20px 0;
+    padding : 10px 0 10px 0;
+}
+
+nav .profile_butt {
+    margin: 0 0 0 15px;
+    color : white;
+    background-color: grey;
+
+    text-decoration: none;
+
+    transition-property: background-color, letter-spacing;
+    transition-duration: 2s;
+}
+
+nav .profile_butt:hover {
+    background-color: DarkGray;
+    letter-spacing: 4px;
+}
+
+nav .detail_butt {
+    margin: 0 0 0 15px;
+    color : white;
+    background-color: grey;
+
+    text-decoration: none;
+
+    transition-property: background-color, letter-spacing;
+    transition-duration: 2s;
+}
+
+nav .detail_butt:hover {
+    background-color: DarkGray;
+    letter-spacing: 4px;
+}
+ /* 여기까지 header */
+
+main #profile {
+    font-size: 30px;
+    margin: 0 0 15px 30px;
+    /* text-align: center; */
+ }
+
+main #profile h1 {
+    margin: 10px 40px;
+}
+
+main .box {
+    overflow: hidden;
+}
+
+main article img {
+    width: 210px;
+    height: 280px;
+    /* margin: 10px 0 15px ; */
+    /* overflow: hidden; */
+    transition: all 2s;
+}
+main article img:hover {
+    transform: scale(1.2);
+}
+
+@media (min-width: 320px) and (max-width:800px) {
+    #profile {
+        text-align: center;
+    }
+}
+
+/*  여기까지 main profile */
+
+#detail {
+    margin: 0 0 0 35px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 320px) and (max-width:800px) {
+    #detail {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+#detail section p {
+    font-size : 20px;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+}
+
+/* 여기까지 main detail */
+
+footer {
+    background-color: #c3c0c0;
+
+}
+
+footer .author {
+    font-size: 10px;
+    color: white;
+
+    padding: 10px 0 0 15px;
+    margin: 15px 0 0 0;
+}
+
+footer .copyright {
+    font-size: 10px;
+    color: white;
+
+    padding: 0 0 10px 15px;
+    margin: 3px 0 15px 0;
+}
